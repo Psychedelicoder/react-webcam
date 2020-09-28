@@ -90,9 +90,9 @@ const Camera = () => {
     fetch("/rest/v1/masterdata/storephoto", {
       body: JSON.stringify({
         byteStream: `${pictureAsJPEG}`,
-        idName: setSet((currentSetId) => (currentSetId = set.idName)),
-        typeName: setSet((currentSetType) => (currentSetType = set.type)),
-        userId: setSet((currentSetUserId) => (currentSetUserId = set.userId)),
+        idName: `${set.idName}`,
+        typeName: `${set.type}`,
+        userId: `${set.userId}`,
       }),
       headers: {
         Accept: "application/json",
