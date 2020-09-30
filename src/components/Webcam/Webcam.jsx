@@ -4,10 +4,10 @@ import Gallery from "../Gallery/Gallery";
 
 const Webcam = () => {
   return (
-    <div>
+    <React.Fragment>
       <Camera />
       <Gallery />
-    </div>
+    <React.Fragment>
   );
 };
 
